@@ -257,6 +257,11 @@ ul {
   outline: none;
 }
 
+/* Mobile Message */
+.mobile-message {
+  display: none;
+}
+
 /* Media Query: Laptop */
 @media screen and (max-width: 1800px) {
   .main-title {
@@ -280,5 +285,19 @@ ul {
 
   .drag-column {
     margin: 10px;
+  }
+
+}
+
+/* Media Query: Mobile Devices */
+@media screen and (max-width: 800px) {
+  .mobile-message {
+    background-color: rgb(4, 34, 16);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
   }
 }
